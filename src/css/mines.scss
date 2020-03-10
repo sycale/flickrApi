@@ -1,0 +1,133 @@
+$modal-window-shadow: #000000bf;
+$modal-window-bg: #fff;
+$orange: #ffa500;
+
+.modal-window {
+  position: absolute;
+  width: 40%;
+  height: 700px;
+  top: 100px;
+  left: 30%;
+  display: flex;
+  z-index: 10;
+  flex-direction: column;
+  box-shadow: 0px 0px 38px -4px $modal-window-shadow;
+  background-color: $modal-window-bg;
+
+  &__username {
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+.d-none {
+  display: none !important;
+}
+
+.photo-block {
+  flex-direction: row;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.photo-box {
+  height: 500px;
+  width: 500px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.controller-icon {
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.photo-controller {
+  width: 50px;
+  height: 50px;
+  background-color: $modal-window-bg;
+  border: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  outline: none;
+}
+
+.photo-box .photo-box__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.photo-description {
+  text-align: center;
+}
+
+.photo {
+  overflow: hidden;
+  align-self: center;
+}
+
+.header__title {
+  text-align: center;
+}
+
+.body {
+  margin-top: 50px;
+  padding-left: 50px;
+
+  &__pages-list {
+    margin-bottom: 25px;
+  }
+}
+
+.active-button {
+  border-bottom: solid blue 2px;
+  color: $orange;
+}
+
+.photo-description {
+  font-size: 24px;
+}
+
+.photoset {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: 400px;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.pages-list__numeration {
+  font-size: 18px;
+  margin-right: 20px;
+  cursor: pointer;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.block-close {
+  position: absolute;
+  top: 0;
+  background-color: gray;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0.5;
+}
+
+body {
+  z-index: 1;
+  margin: 0;
+}
